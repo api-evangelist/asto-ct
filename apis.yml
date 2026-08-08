@@ -1,17 +1,31 @@
 aid: asto-ct
 name: Asto CT
-description: 'Asto CT is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Asto CT, Inc. is a Middleton, Wisconsin medical-imaging device manufacturer
+  that designs and builds Equina, a robotically positioned, weight-bearing fan-beam
+  computed tomography (CT) scanner purpose-built for imaging mildly sedated, standing
+  horses. Founded on a 2016 concept and first installed at UW-Madison in 2019, the
+  company sells capital imaging equipment plus installation, training and ongoing
+  clinical support to equine hospitals and veterinary teaching hospitals worldwide,
+  with offices in Middleton, Wisconsin and Crawley, United Kingdom. Asto CT is a
+  hardware company: the Equina system is operated from an on-site console and the
+  company publishes no public developer program, API, SDK or machine-readable
+  interface contract.'
+image: https://static1.squarespace.com/static/561fb278e4b048525fcf098f/t/6830bc104e0f7274d551e013/1748024336785/6.png?format=1500w
 url: https://raw.githubusercontent.com/api-evangelist/asto-ct/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-06'
 modified: '2026-08-06'
 tags:
 - Company
+- Medical Devices
+- Medical Imaging
+- Veterinary
+- Equine Health
+- Computed Tomography
+- Health Care
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +33,55 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/asto-ct-domain-security.yml
+- type: LLMsTxt
+  url: llms/asto-ct-llms.txt
 - type: Website
+  url: https://www.astoct.com/
+- type: Blog
+  url: https://www.astoct.com/news
+- type: BlogRSS
+  url: https://www.astoct.com/news?format=rss
+- type: Support
+  url: https://www.astoct.com/support
+- type: ContactInformation
+  url: https://www.astoct.com/contact
+- type: PrivacyPolicy
+  url: https://www.astoct.com/privacypolicy
+- type: FAQ
+  url: https://www.astoct.com/questions
+- type: CaseStudies
+  url: https://www.astoct.com/case-studies
+- type: LinkedIn
+  url: https://www.linkedin.com/company/asto-ct/
+- type: Twitter
+  url: https://twitter.com/Equina_AstoCT
+- type: YouTube
+  url: https://www.youtube.com/channel/UCnVpRS5OYk0j-JKxihG0Tbw
+- type: Facebook
+  url: https://www.facebook.com/astoct/
+- type: SecondaryMarket
   url: https://forgeglobal.com/asto-ct_stock/
+x-enrichment:
+  date: '2026-08-06'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: Asto CT sells the Equina standing equine CT scanner as capital medical
+    equipment operated from an on-site console; its 303-URL Squarespace sitemap has
+    no developer, API or documentation section and every spec and .well-known probe
+    on www.astoct.com returned 404.
+  evidence:
+  - url: https://www.astoct.com/openapi.json
+    status: 404
+  - url: https://www.astoct.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.astoct.com/.well-known/security.txt
+    status: 404
+  - url: https://www.astoct.com/sitemap.xml
+    status: 200
+  checked: '2026-08-06'

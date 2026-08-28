@@ -10,6 +10,17 @@ description: 'Asto CT, Inc. is a Middleton, Wisconsin medical-imaging device man
   hardware company: the Equina system is operated from an on-site console and the
   company publishes no public developer program, API, SDK or machine-readable
   interface contract.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://static1.squarespace.com/static/561fb278e4b048525fcf098f/t/6830bc104e0f7274d551e013/1748024336785/6.png?format=1500w
 url: https://raw.githubusercontent.com/api-evangelist/asto-ct/refs/heads/main/apis.yml
 x-type: company
